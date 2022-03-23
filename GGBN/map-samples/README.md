@@ -34,14 +34,16 @@ This procedure uses a SQLite database (using the [SQLite command line interface]
 	~~~
 	
 6. To create a map with a Mercator projection, run the R code `create_map_mercator.R`.
-- Change the export filename at the end of the code to the current YYYY-MM.
+	
+	> Change the export filename at the end of the code to the current YYYY-MM.
 
 	~~~
 	Rscript create_map_mercator.R
 	~~~
 
 7. To create a map with a Lambert cylindrical equal-area projection (not biased towards the poles), run the R code `create_map_lambert.R`.
-- Change the export filename at the end of the code to the current YYYY-MM.
+
+	> Change the export filename at the end of the code to the current YYYY-MM.
 
 	~~~
 	Rscript create_map_lambert.R
