@@ -1,10 +1,16 @@
 # Create map of GGBN georeferenced samples
 
+This procedure uses a SQLite database (using the [SQLite command line interface](https://www.sqlite.org/cli.html) ) and R.
+
 ## Procedure
 
 1. Download `taxa_coordinates_ggbn.zip` from the [GGBN Data Portal](http://www.ggbn.org/ggbn_portal/documents/taxa_coordinates_ggbn.zip). Unzip the file to obtain the SQL file `Amanda.sql` 🙂
 
-2. Create a blank SQLite database (e.g. `ggbn_localities.sqlite`).
+2. Create a new SQLite database.
+
+	~~~
+	sqlite3 ggbn_records.sqlite
+	~~~
 
 3. In the SQLite database, run the SQL code in `create_table_Amanda.sql` to create an empty table named `Amanda`
 
