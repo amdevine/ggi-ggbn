@@ -2,6 +2,12 @@
 
 This procedure uses a SQLite database (using the [SQLite command line interface](https://www.sqlite.org/cli.html) ) and R.
 
+The files in `all-samples` will create a basic map of all georeferenced samples in GGBN. 
+
+The files in `nmnh-samples` will create a map of georeferenced samples in GGBN. Samples from NMNH are colored red and samples from all other institutions are colored blue.
+
+The procedure for generating either kind of map is the same, outlined below.
+
 ## Procedure
 
 1. Download `taxa_coordinates_ggbn.zip` from the [GGBN Data Portal](http://www.ggbn.org/ggbn_portal/documents/taxa_coordinates_ggbn.zip). Unzip the file to obtain the SQL file `Amanda.sql` 🙂
@@ -51,10 +57,18 @@ This procedure uses a SQLite database (using the [SQLite command line interface]
 	
 ## Output maps
 
-### Mercator
+### Mercator (All Samples)
 
-![](GGBN_Records_2022-03_Mercator.png)
+![](all-samples/GGBN_Records_2022-03_Mercator.png)
+
+### Mercator (NMNH vs Other Institutions)
+
+![](nmnh-samples/NMNH_GGBN_Records_2022-03_Mercator.png)
 
 ### Lambert
 
-![](GGBN_Records_2022-03_Lambert.png)
+![](all-samples/GGBN_Records_2022-03_Lambert.png)
+
+### Lambert (NMNH vs Other Institutions)
+
+![](nmnh-samples/NMNH_GGBN_Records_2022-03_Lambert.png)
